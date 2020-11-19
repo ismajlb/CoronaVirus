@@ -15,7 +15,7 @@
 	<description>This Application track people infected with Covid19.</description>
 
 	<properties>
-		<java.version>12</java.version>
+		<java.version>13</java.version>
 	</properties>
 
 	<dependencies>
@@ -61,6 +61,29 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<configuration>
+		<release>13</release>
+		<compilerArgs>
+			--enable-preview
+		</compilerArgs>
+	</configuration>
+</plugin>
+<plugin>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<configuration>
+		<argLine>--enable-preview</argLine>
+	</configuration>
+</plugin>
+<plugin>
+	<artifactId>maven-failsafe-plugin</artifactId>
+	<configuration>
+		<argLine>--enable-preview</argLine>
+	</configuration>
+</plugin>
+
 		</plugins>
 	</build>
 

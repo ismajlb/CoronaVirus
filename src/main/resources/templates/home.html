@@ -31,16 +31,20 @@
         <th scope="col">New Cases</th>        
       </tr>
       </thead>
+      
+      
+      
       <tr th:each="locationstat : ${locationStats}">
+      	
         <td th:text="${locationstat.country}" scope="row"></td>
         <td th:text="${locationstat.state}" scope="row"></td>       
         <td th:text="${locationstat.dayYesteday}" scope="row"></td>
         <td th:text="${locationstat.latestTotalCases}" scope="row"></td>
         <td th:text="${locationstat.newCases}" scope="row"></td>
+        
       </tr>
     </table>
-    </div>
-  
-  </body>
+    </div>  
+
 
 </html>
