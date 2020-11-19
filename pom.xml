@@ -12,10 +12,10 @@
 	<artifactId>CoronaVirus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CoronaVirus</name>
-	<description>This Application track people infected with Covid19.</description>
+	<description>This Application track the number of people infected with Covid19.</description>
 
 	<properties>
-		<java.version>13</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -55,36 +55,16 @@
 		</dependency>
 	</dependencies>
 
+	
 	<build>
-		<plugins>
-			<plugin>
+    <plugins>
+    
+    <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
-			<plugin>
-	<artifactId>maven-compiler-plugin</artifactId>
-	<configuration>
-		<release>13</release>
-		<compilerArgs>
-			--enable-preview
-		</compilerArgs>
-	</configuration>
-</plugin>
-<plugin>
-	<artifactId>maven-surefire-plugin</artifactId>
-	<configuration>
-		<argLine>--enable-preview</argLine>
-	</configuration>
-</plugin>
-<plugin>
-	<artifactId>maven-failsafe-plugin</artifactId>
-	<configuration>
-		<argLine>--enable-preview</argLine>
-	</configuration>
-</plugin>
-
-		</plugins>
-	</build>
+        
+    </plugins>
+</build>
 
 </project>
