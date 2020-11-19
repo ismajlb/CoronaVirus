@@ -14,9 +14,7 @@
 	<name>CoronaVirus</name>
 	<description>This Application track the number of people infected with Covid19.</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+
 
 	<dependencies>
 	
