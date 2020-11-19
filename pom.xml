@@ -14,7 +14,9 @@
 	<name>CoronaVirus</name>
 	<description>This Application track the number of people infected with Covid19.</description>
 
-
+	<properties>
+		<java.version>11</java.version>
+	</properties>
 
 	<dependencies>
 	
@@ -53,7 +55,7 @@
 		</dependency>
 	</dependencies>
 
-	
+	<!-- 
 	<build>
     <plugins>
     
@@ -63,6 +65,22 @@
 			</plugin>
         
     </plugins>
-</build>
+	</build>
+	
+	-->
+	
+	<build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <release>10</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+	
 
 </project>
